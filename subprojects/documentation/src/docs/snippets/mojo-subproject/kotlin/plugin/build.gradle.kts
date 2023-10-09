@@ -16,7 +16,7 @@
 plugins {
     // TODO remove after 0.2.1 release
     java
-    id("de.benediktritter.maven-plugin-development") version "0.4.0"
+    id("de.benediktritter.maven-plugin-development") version "0.4.2"
 }
 
 // tag::mojo-subproject[]
