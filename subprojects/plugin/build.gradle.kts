@@ -30,7 +30,7 @@ description = "Gradle plugin for developing Apache Maven plugins"
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(8))
+        languageVersion = JavaLanguageVersion.of(8)
     }
 }
 
@@ -111,14 +111,14 @@ tasks {
 }
 
 gradlePlugin {
-    website.set("https://britter.github.io/maven-plugin-development")
-    vcsUrl.set("https://github.com/britter/maven-plugin-development")
+    website = "https://britter.github.io/maven-plugin-development"
+    vcsUrl = "https://github.com/britter/maven-plugin-development"
     plugins.create("mavenPluginDevelopment") {
         id = "de.benediktritter.maven-plugin-development"
         displayName = "Maven plugin development plugin"
         description = project.description
         implementationClass = "de.benediktritter.maven.plugin.development.MavenPluginDevelopmentPlugin"
-        tags.set(listOf("maven", "mojo", "maven plugin"))
+        tags = listOf("maven", "mojo", "maven plugin")
     }
 }
 
@@ -133,18 +133,18 @@ publishing {
             }
         }
         pom {
-            description.set(project.description)
-            url.set("https://github.com/britter/maven-development-plugin")
+            description = project.description
+            url = "https://github.com/britter/maven-development-plugin"
             licenses {
                 license {
-                    name.set("Apache-2.0")
-                    url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                    name = "Apache-2.0"
+                    url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
                 }
             }
             scm {
-                connection.set("scm:git:git://github.com/britter/maven-development-plugin.git")
-                developerConnection.set("scm:git:ssh://github.com/britter/maven-development-plugin.git")
-                url.set("https://github.com/britter/maven-development-plugin")
+                connection = "scm:git:git://github.com/britter/maven-development-plugin.git"
+                developerConnection = "scm:git:ssh://github.com/britter/maven-development-plugin.git"
+                url = "https://github.com/britter/maven-development-plugin"
             }
         }
     }

@@ -62,9 +62,9 @@ tasks {
 val asciidoctor by tasks.existing
 
 gitPublish {
-    repoUri.set("https://github.com/britter/maven-plugin-development")
-    branch.set("gh-pages")
-    sign.set(false)
+    repoUri = "https://github.com/britter/maven-plugin-development"
+    branch = "gh-pages"
+    sign = false
 
     contents {
         from(asciidoctor)

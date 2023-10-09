@@ -19,6 +19,6 @@ plugins {
 
 // tag::help-mojo[]
 mavenPlugin {
-    helpMojoPackage.set("org.example.help")
+    helpMojoPackage = "org.example.help"
 }
 // end::help-mojo[]

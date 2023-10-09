@@ -26,6 +26,6 @@ dependencies {
 }
 
 mavenPlugin {
-    dependencies.set(deps)
+    dependencies = deps
 }
 // end::dependencies[]
